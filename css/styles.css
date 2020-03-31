@@ -30,3 +30,6 @@
     line-height: 1;
     letter-spacing: -.05rem;
 }
+.navbar a, .page-footer a{
+    color: #fff;
+}
