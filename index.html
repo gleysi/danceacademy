@@ -8,46 +8,93 @@
      <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
      <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
      <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+     <link rel="stylesheet" href="css/styles.css">
      <!-- endbuild -->
     <title>Dance Academy</title>
 </head>
 
 <body>
-     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">Home</a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav text-uppercase ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#teachers">Teachers</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#events">Events</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#schedules">Class Schedules</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#sboutus">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-                </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
     <header>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">Home</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#teachers">Teachers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#events">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#schedules">Class Schedules</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#sboutus">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <div class="container">
+    <div class="container" id="content">
         <div class="row row-content">
+            <div class="col">
+                <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <div class="img-caption">
+                                <img class="d-block img-fluid" src="img/home1.jpg" alt="Level 1">
+                            </div>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Level 1 <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-default">$499</span></h2>
+                                <p class="d-none d-sm-block">More than 20 clases at month. Includes: Cumbia, Salsa and Bachata.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="img-caption">
+                                <img class="d-block img-fluid" src="img/home2.jpg" alt="Level 2">
+                            </div>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Level 2 <span class="badge badge-danger">NEW </span></h2>
+                                <p class="d-none d-sm-block">Includes Cumbia, Salsa, Bachata sencual & Dominicana, Chachacha, Corporal movement and ladies style.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="img-caption">
+                                <img class="d-block img-fluid" src="img/home3.jpg" alt="Urban Dance">
+                            </div>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>URBAN DANCE <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-default">$499</span></h2>
+                                <p class="d-none d-sm-block">More than 20 clases at month. Includes: HipHop, Reggaeton, Heels, Twerk, Jazz and Physical conditioning.</p>
+                            </div>
+                        </div>
+                        <ol class="carousel-indicators">
+                            <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#mycarousel" data-slide-to="1"></li>
+                            <li data-target="#mycarousel" data-slide-to="2"></li>
+                        </ol>
+                        <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                        <button class="btn btn-danger btn-sm" id="carouselButton">
+                            <span id="carousel-button-icon" class="fa fa-pause"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -57,6 +104,7 @@
     <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
     <!-- endbuild -->
 </body>
 

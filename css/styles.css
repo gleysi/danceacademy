@@ -1,0 +1,13 @@
+#content {
+    margin-top: 55px;
+}
+.carousel {
+    background: #000;
+}
+#mycarousel .carousel-item img {
+    max-height: 640px;
+}
+.img-caption {
+    margin: auto;
+    display: table;
+}
