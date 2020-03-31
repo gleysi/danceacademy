@@ -1,35 +1,35 @@
 .carousel-inner {
-    max-height: 400px;
-}
+  max-height: 400px; }
 
 #carousel-content, .marketing {
-    padding-top: 55px;
-}
+  padding-top: 55px; }
+
+.teachers {
+  padding-top: 100px;
+  padding-bottom: 100px; }
 
 .marketing .col-lg-4 {
-    color: #5a5a5a;
-    margin-bottom: 1.5rem;
-    text-align: center;
-}
+  color: #5a5a5a;
+  margin-bottom: 1.5rem;
+  text-align: center; }
 
 .marketing h2 {
-    font-weight: 400;
-}
+  font-weight: 400; }
 
 .marketing .col-lg-4 p {
-    margin-right: .75rem;
-    margin-left: .75rem;
-}
+  margin-right: .75rem;
+  margin-left: .75rem; }
 
 .featurette-divider {
-    margin: 5rem 0;
-}
+  margin: 5rem 0; }
 
 .featurette-heading {
-    font-weight: 300;
-    line-height: 1;
-    letter-spacing: -.05rem;
-}
-.navbar a, .page-footer a{
-    color: #fff;
-}
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem; }
+
+.navbar a, .page-footer a {
+  color: #fff; }
+
+.card {
+  margin-bottom: 20px; }
