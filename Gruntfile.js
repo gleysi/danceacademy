@@ -60,7 +60,7 @@ module.exports = function (grunt) {
         useminPrepare: {
             foo: {
                 dest: 'dist',
-                src: ['index.html']
+                src: ['index.html','events.html','schedules.html','teachers.html']
             },
             options: {
                 flow: {
@@ -122,7 +122,7 @@ module.exports = function (grunt) {
         // options.assetDirs contains the directories for finding the assets
         // according to their relative paths
         usemin: {
-            html: ['dist/index.html'],
+            html: ['dist/index.html','dist/events.html','dist/schedules.html','dist/teachers.html'],
             options: {
                 assetsDirs: ['dist', 'dist/css','dist/js']
             }
@@ -133,7 +133,10 @@ module.exports = function (grunt) {
                     collapseWhitespace: true
                 },
                 files: {                                   // Dictionary of files
-                    'dist/index.html': 'dist/index.html'
+                    'dist/index.html': 'dist/index.html',
+                    'dist/events.html': 'dist/events.html',
+                    'dist/schedules.html': 'dist/schedules.html',
+                    'dist/teachers.html': 'dist/teachers.html'
                 }
             }
         },
