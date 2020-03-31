@@ -12,10 +12,7 @@ $(document).ready(function(){
             $("#carouselButton").children("span").addClass('fa-pause');                    
         }
     });
-    $("#btnReserveTable").click(function(){
-        $("#reservationModal").modal('toggle');
-    });
-    $("#btnLogin").click(function(){
-        $("#loginModal").modal('toggle');
+    $("#btnContact").click(function(){
+        $("#contactModal").modal('toggle');
     });
 });

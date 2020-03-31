@@ -38,12 +38,47 @@
                         <a class="nav-link js-scroll-trigger" href="#sboutus">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                        <a id="btnContact" class="nav-link js-scroll-trigger" href="#contact">Contact</a>
                     </li>
                     </ul>
                 </div>
             </div>
         </nav>
+        <div id="contactModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Contact </h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-sm-6">
+                                    <label class="sr-only" for="exampleInputName">Full Name</label>
+                                    <input type="text" class="form-control form-control-sm mr-1" id="exampleInputName" placeholder="Enter Full Name">
+                                </div>
+                                <div class="form-group col-sm-6">
+                                        <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                        <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-sm-12">
+                                    <label class="sr-only" for="exampleFormControlTextarea1">Ask us and we´ll anser you asap.</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Ask any question and we´ll anser you asap."></textarea>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary btn-sm ml-1">Send</button>        
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
 
     <div class="container" id="carousel-content">
