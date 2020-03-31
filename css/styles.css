@@ -1,13 +1,32 @@
-#content {
-    margin-top: 55px;
+.carousel-inner {
+    max-height: 400px;
 }
-.carousel {
-    background: #000;
+
+#carousel-content, .marketing {
+    padding-top: 55px;
 }
-#mycarousel .carousel-item img {
-    max-height: 640px;
+
+.marketing .col-lg-4 {
+    color: #5a5a5a;
+    margin-bottom: 1.5rem;
+    text-align: center;
 }
-.img-caption {
-    margin: auto;
-    display: table;
+
+.marketing h2 {
+    font-weight: 400;
+}
+
+.marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
+
+.featurette-divider {
+    margin: 5rem 0;
+}
+
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
 }
